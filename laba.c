@@ -17,11 +17,7 @@ int main(){
       search(f);
       break;
     case 3://add
-      f = fopen("sport","a");
-      if(!f) 
-        return 404;
       add(f);
-      fclose(f);
       break;
       
     case 4://delete

@@ -19,15 +19,12 @@ int main(){
     case 3://add
       add(f);
       break;
-      
     case 4://delete
       del(f); 
       break;
-      
     case 5://edit
       edit(f);
       break;
-      
     default:
       return 404;
     }

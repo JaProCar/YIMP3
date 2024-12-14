@@ -63,14 +63,18 @@ void search(FILE* f){
   fclose(f);
 }
 void add(FILE *f){
+  f = fopen("sport","a");
+      if(!f) 
+        return;
   sp e; //editable
   puts("name of the match");
-      scanf("%s", e.name);
-      puts("amount");
-      scanf("%i", &e.amount);
-      puts("how much used in games");
-      scanf("%i", &e.used);
-      fprintf(f, "%s %i %i\n", e.name, e.amount, e.used);
+  scanf("%s", e.name);
+  puts("amount");
+  scanf("%i", &e.amount);
+  puts("how much used in games");
+  scanf("%i", &e.used);
+  fprintf(f, "%s %i %i\n", e.name, e.amount, e.used);
+  fclose(f);
 }
 void del(FILE*f){
   sp e; //editable
